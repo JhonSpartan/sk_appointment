@@ -1,9 +1,7 @@
 "use client"
 
 import {
-  Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -38,7 +36,7 @@ interface customProps {
 };
 
 const RenderField = ({  field, props }: {field: any, props: customProps}) => {
-  const { fieldType, placeholder, iconAlt, iconSrc, dateFormat, renderSkeleton } = props;
+  const { fieldType, iconAlt, iconSrc, dateFormat, renderSkeleton } = props;
 
   switch (fieldType) {
     case FormFieldType.INPUT:

@@ -3,14 +3,13 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { Button } from "@/components/ui/button";
 import { Form, FormControl } from "@/components/ui/form"
 import CustomFormField from "../CustomFormField";
 import SubmitButton from "../SubmitButton";
 import { useState } from "react";
 import { ClientFormValidation } from "@/lib/vaildation";
 import { useRouter } from "next/navigation";
-import { createUser, registerClient } from "@/lib/services/client.services";
+import { registerClient } from "@/lib/services/client.services";
 import { FormFieldType } from "./ClientForm";
 import { RadioGroup, RadioGroupItem } from "../ui/radio-group";
 import { ClientFormDefaultValues, GenderOptions, Manicurists } from "@/constants";
